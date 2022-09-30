@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="610dp"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/no_user_3"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/user_image"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        app:srcCompat="@drawable/no_user_3" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/profile_image"
+        android:backgroundTint="#50ffffff"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_txt"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="#860744" />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_email"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_txt"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColorHint="#860744" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_username"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_txt"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#860744" />
+
+    <EditText
+        android:id="@+id/reg_confirm_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_password"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edit_txt"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColorHint="#860744" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_confirm_password"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_dsply_clr"
+        android:text="Register" />
+
+
+</RelativeLayout>

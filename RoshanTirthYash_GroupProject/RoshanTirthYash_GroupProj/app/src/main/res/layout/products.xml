@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFE1D3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="140dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/prod_card"
+                android:layout_width="match_parent"
+
+                android:layout_height="240dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="200dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="150dp"
+                            android:text="TextView"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <RatingBar
+                            android:id="@+id/text_rat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-55dp"
+                            android:layout_marginTop="-15dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressTint="#FFC107"
+                            android:scaleX="0.3"
+                            android:scaleY="0.3"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/free_delivery_txt"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginLeft="30dp"-->
+                        <!--                            android:layout_marginTop="-20dp"-->
+                        <!--                            android:text="Delivery Free" />-->
+
+                        <TextView
+                            android:id="@+id/text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="-20dp"
+                            android:text="$ 00"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="170dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_weight="1"
+                        android:elevation="15dp"
+                        app:srcCompat="@drawable/like_10" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="381dp"
+            android:layout_height="279dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            tools:srcCompat="@drawable/red_wine_1" />
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/frag_log"
+        android:title="LOGIN"
+        android:background="@drawable/frag_log_reg"/>
+
+    <item
+        android:id="@+id/frag_reg"
+        android:title="REGISTER" />
+
+</menu>
